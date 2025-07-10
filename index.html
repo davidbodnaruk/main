@@ -1,87 +1,51 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Оренда житла в твоєму місті</title>
-  <link rel="stylesheet" href="stule.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Оренда житла в твоєму місті</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Контакти | Zhytlo.ua</title>
   <link rel="stylesheet" href="stule.css">
 </head>
 <body>
-    <header class="site-header">
-  <div class="container">
-    <div class="logo">
-      <a href="#">Zhytlo.ua</a>
-    </div>
-    <nav class="site-nav">
+
+  <div class="background"></div>
+
+  <header class="main-header">
+    <h1>Zhytlo.ua</h1>
+    <nav>
       <ul>
         <li><a href="https://davidbodnaruk.github.io/main/">Головна</a></li>
         <li><a href="https://davidbodnaruk.github.io/orende/">Оренда</a></li>
         <li><a href="https://davidbodnaruk.github.io/prodag2/">Продаж</a></li>
-        <li><a href="https://davidbodnaruk.github.io/kontakts/">Контакти</a></li>
+        <li><a href="https://davidbodnaruk.github.io/kontakts/" class="active">Контакти</a></li>
       </ul>
     </nav>
-  </div>
-</header>
-<main>
+  </header>
 
-  <h1>Оренда житла в твоєму місті</h1>
+  <main class="main-container contact-page">
+    <h2 class="section-title">Зв’язатися з нами</h2>
 
-  <form>
-    <input type="text" placeholder="Місто або район">
-    <input type="date" placeholder="Дата заїзду">
-    <input type="date" placeholder="Дата виїзду">
-    <button type="submit">Пошук</button>
-  </form>
+    <p>Телефон: <a href="tel:+380123456789">+38 (012) 345-67-89</a></p>
+    <p>Email: <a href="mailto:info@zhytlo.ua">info@zhytlo.ua</a></p>
+    <p>Адреса: м. Київ, вул. Хрещатик, 1</p>
 
-  <div class="listing">
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQpmFDCH61p48TKo2s5Fv_cSxCNFdcJbYXZ8g&s" alt="Квартира 1">
-    <h2>Затишна квартира у центрі</h2>
-    <p>Ціна: 500 ₴/місяць</p>
-    <button>Детальніше</button>
-  </div>
+    <h3>Форма зворотнього зв’язку</h3>
+    <form action="#" method="post" class="contact-form">
+      <label for="name">Ім’я:</label><br />
+      <input type="text" id="name" name="name" required /><br /><br />
 
-  <div class="register">
-    <h2>Реєстрація</h2>
-    <form id="registerForm">
-      <input type="text" id="username" placeholder="Ім'я користувача" required>
-      <input type="email" id="email" placeholder="Email" required>
-      <input type="password" id="password" placeholder="Пароль" required>
-      <button type="submit">Зареєструватися</button>
+      <label for="email">Email:</label><br />
+      <input type="email" id="email" name="email" required /><br /><br />
+
+      <label for="message">Повідомлення:</label><br />
+      <textarea id="message" name="message" rows="5" required></textarea><br /><br />
+
+      <button type="submit">Відправити</button>
     </form>
-    <p id="registerMessage"></p>
-  </div>
-</main>
-<footer>
-<footer class="main-footer">
-  <div class="footer-container">
-    <div class="footer-section">
-      <h3>Про нас</h3>
-      <p>Zhytlo.ua — сервіс оренди та продажу житла в Україні. Надійно. Зручно. Прозоро.</p>
-    </div>
-    <div class="footer-section">
-      <h3>Контакти</h3>
-      <p>📞 +38 (097) 123-45-67</p>
-      <p>✉️ info@zhytlo.ua</p>
-      <p>🏢 м. Київ, вул. Житлова, 10</p>
-    </div>
-    <div class="footer-section">
-      <h3>Навігація</h3>
-      <ul>
-        <li><a href="#">Головна</a></li>
-        <li><a href="#">Оренда</a></li>
-        <li><a href="#">Продаж</a></li>
-        <li><a href="#">Контакти</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>&copy; 2025 Zhytlo.ua. Всі права захищені.</p>
-  </div>
-</footer>
+  </main>
+
+</body>
+</html>
 
 
 
